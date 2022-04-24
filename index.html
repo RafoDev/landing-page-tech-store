@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Langing Page Studio</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+</head>
+
+<body class="body">
+	<header class="header">
+		<nav class="header-nav">
+			<div class="header-nav__container">
+				<a href="#" class="header-nav__link-logo-container">
+					<img src="https://i.postimg.cc/Bv0NN80w/logo-cohete-2.jpg" alt="Logo de Landing Page Studio"
+						class="header-nav__link-logo">
+				</a>
+				<label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+					<i class="bi bi-list"></i>
+				</label>
+				<input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox">
+				<ul class="header-nav__menu-link-list">
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item1">
+						<a href="#inicio" class="header-nav__menu-link header-nav__menu-link--item1">
+							INICIO
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item2">
+						<a href="#servicios" class="header-nav__menu-link header-nav__menu-link--item2">
+							SERVICIOS
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item3">
+						<a href="#proyectos" class="header-nav__menu-link header-nav__menu-link--item3">
+							PROYECTOS
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item4">
+						<a href="#equipo" class="header-nav__menu-link header-nav__menu-link--item4">
+							EQUIPO
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item5">
+						<a href="#cotizacion" class="header-nav__menu-link header-nav__menu-link--item5">
+							COTIZACIÓN
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item6">
+						<a href="#contacto" class="header-nav__menu-link header-nav__menu-link--active 
+							header-nav__menu-link--item6">
+							CONTACTO
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="proyectos">
+			<h2 class="proyectos__title">
+				Proyectos
+			</h2>
+			<section class="proyectos" id="proyectos">
+				<div class="proyectos-container">
+					<ul class="proyectos__button-container">
+						<li class="proyectos__button current" data-target="all">Todos</li>
+						<li class="proyectos__button" data-target="react">React</li>
+						<li class="proyectos__button" data-target="angular">Angular</li>
+						<li class="proyectos__button" data-target="vue">Vue</li>
+					</ul>
+					<div class="proyectos__gallery">
+						<article data-item="react" class="proyectos__gallery-item">
+							<img src="images/proyects/creatives.jpg" alt="We are creatives thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">We are creatives</p>
+									<p class="proyectos__gallery-item-subtitle">React + Next.js </p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+							</div>
+						</article>
+
+						<article data-item="react" class="proyectos__gallery-item">
+							<img src="images/proyects/gallery.jpg" alt="Algún nombre"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Modern art gallery</p>
+									<p class="proyectos__gallery-item-subtitle">React + Django</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+							</div>
+						</article>
+						<article data-item="angular" class="proyectos__gallery-item">
+							<img src="images/proyects/experiences.jpg"
+								alt="Immersive Experiencies that deliver thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Immersive experiencies that deliver</p>
+									<p class="proyectos__gallery-item-subtitle">Angular + Spring</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+							</div>
+						</article>
+						<article data-item="angular" class="proyectos__gallery-item">
+							<img src="images/proyects/keyboards.jpg" alt="Typemaster Keyboard thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Typemaster Keyboard</p>
+									<p class="proyectos__gallery-item-subtitle">Angular + Laravel</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+						<article data-item="vue" class="proyectos__gallery-item">
+							<img src="images/proyects/meet.jpg" alt="Let's meet thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Let's meet</p>
+									<p class="proyectos__gallery-item-subtitle">Vue + Express.js</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+						<article data-item="vue" class="proyectos__gallery-item">
+							<img src="images/proyects/sneakers.jpg" alt="Sneakers thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Sneakers</p>
+									<p class="proyectos__gallery-item-subtitle">Vue + Django</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+						<article data-item="vue" class="proyectos__gallery-item">
+							<img src="images/proyects/space.jpg" alt="So, you want to travel to the space thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">So, you want to travel to the space</p>
+									<p class="proyectos__gallery-item-subtitle">Vue + Laravel</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+					</div>
+				</div>
+
+			</section>
+		</section>
+	</main>
+	<footer class="footer" id="contacto">
+		<div class="footer-container">
+			<div class="footer__information">
+				<article class="footer__contacto-container">
+					<h2 class="footer__contacto-title">Contacto</h2>
+					<h3 class="footer__contacto-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Doloremque, blanditiis.</h3>
+				</article>
+				<article class="footer__servicios-container">
+					<h2 class="footer__servicios-title">Servicios</h2>
+					<h3 class="footer__servicios-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Doloremque, blanditiis.</h3>
+				</article>
+			</div>
+			<form class="footer__form">
+				<h2 class="footer__form-title">Escríbenos</h2>
+				<input type="text" class="footer__form-input" placeholder="Escribe tu email aquí">
+				<button class="footer__form-boton">Enviar</button>
+			</form>
+
+			<nav class="footer__social-media-container">
+				<ul class="footer__link-list">
+					<li class="footer__link-item"><a href="#" class="footer__link"><i
+								class="fa-brands fa-facebook"></i></a>
+					</li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i
+								class="fa-brands fa-instagram"></i></a></li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i
+								class="fa-brands fa-twitter"></i></a>
+					</li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i
+								class="fa-brands fa-youtube"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script type="text/javascript" src="scripts/galleryFilter.js"></script>
+</body>
+
+</html>
