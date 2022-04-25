@@ -2,10 +2,12 @@
 @import 'footer';
 @import 'productos';
 @import 'cover';
+@import 'header';
+
 :root{
     --primary-color: #F9A66C;
     --secondary-color: #FFC04B;
-    --tertiary-color: #F17A7E;
+    --tertiary-color: F17A7E;
     --bg-light-color: #F9FAF4;
     --bg-dark-color: #4A6163;
     --text-light-color: #F9FAF4;
@@ -17,7 +19,8 @@
     --max-width: 1080px;
 }
 
-
-body{
+.body{
+    font-family: var(--font-family);
+    background-color: var(--bg-light-color);
     margin:0;
 }
