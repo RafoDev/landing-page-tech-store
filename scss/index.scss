@@ -1,7 +1,7 @@
 @import 'mixins';
 @import 'footer';
 @import 'productos';
-
+@import 'cover';
 :root{
     --primary-color: #F9A66C;
     --secondary-color: #FFC04B;
@@ -16,6 +16,7 @@
     --font-weight-black: 900;
     --max-width: 1080px;
 }
+
 
 body{
     margin:0;

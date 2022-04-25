@@ -1,0 +1,72 @@
+// cover
+// cover-container
+// cover__banner
+// cover__baner-info
+// cover__banner-title
+// cover__banner-button
+// cover__info
+// cover__info-item
+// cover__info-title
+// cover__info-description
+
+
+.cover{
+    &-container{
+        max-width: var(--max-width);
+        margin:0 auto;
+    }
+    &__banner{
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        padding:1rem;
+        background-image: url(https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/16:9/w_1280,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg);
+        background-position: center;
+        background-size: cover;
+        &-info{
+            box-sizing: border-box;
+            position: absolute; 
+            bottom: 1rem;
+            left:0;
+            background-color: var(--bg-light-color);
+            display: flex;
+            @include flex-d-w-j-a-g(column, nowrap, center, start,1.5rem);
+            width:70%;
+            padding:2em 1em;
+        }
+        &-title{
+            margin:0;
+            inline-size: 60vw;
+            overflow-wrap: break-word;
+        }
+        &-button{
+            transition: box-shadow .25s ease;
+            @include button-hover{
+                box-shadow: 2px 2px 0 2px var(--primary-color), -2px -2px 0 2px var(--tertiary-color);
+            }
+        }
+    }
+    &__info{
+        box-sizing: border-box;
+        @include flex-d-w-j-a-g(row, wrap, center, start, 0);
+        &-item{
+            box-sizing: border-box;
+            text-align: center;
+            padding: 1rem;
+            flex-basis: 270px;
+        }
+        &-logo{
+            
+            font-size: 3rem;
+        }
+        &-title{
+
+        }
+        &-description{
+            font-size: .9rem;
+            color: rgb(98, 98, 98);
+        }
+    }
+
+}

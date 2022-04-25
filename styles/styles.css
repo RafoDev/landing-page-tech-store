@@ -1,95 +1,39 @@
-.productos {
-  width: 100%;
-}
-.productos-container {
-  text-align: center;
-  padding-bottom: 2rem;
-  padding: 1rem;
+.cover-container {
   max-width: var(--max-width);
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-.productos__title {
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 2rem;
-  color: var(--text-dark-color);
-}
-.productos__button-container {
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.productos__button {
-  border-radius: 10px;
-  background-color: var(--primary-color);
-  padding: 0.5em 1em;
-  list-style: none;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
-  font-size: 1rem;
-}
-.productos__button.current {
-  filter: none;
-  color: var(--text-light-color);
-  background: var(--secondary-color);
-}
-.productos__gallery {
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 220px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-.productos__gallery-item {
+.cover__banner {
   box-sizing: border-box;
-  width: 100%;
-  overflow: hidden;
-  background-color: #fff;
   position: relative;
+  width: 100%;
+  height: 50vh;
+  padding: 1rem;
+  background-image: url(https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/16:9/w_1280,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.productos__gallery-item-thumbnail {
-  position: absolute;
-  top: 0;
-  left: 55px;
-  width: 70%;
-}
-.productos__gallery-item-info {
+.cover__banner-info {
   box-sizing: border-box;
   position: absolute;
-  top: 2.5%;
-  right: 2.5%;
-  width: 45%;
-  height: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  bottom: 1rem;
+  left: 0;
   background-color: var(--bg-light-color);
-  transition: background-color 0.25s ease;
-}
-.productos__gallery-item-description {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: var(--text-dark-color);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  width: 70%;
+  padding: 2em 1em;
 }
-.productos__gallery-item-title {
-  font-weight: 900;
+.cover__banner-title {
   margin: 0;
+  inline-size: 60vw;
+  overflow-wrap: break-word;
 }
-.productos__gallery-item-subtitle {
-  font-weight: var(--font-weight-regular);
-  margin: 0;
-}
-.productos__gallery-item-button {
-  transition: box-shadow 0.25s ease-in-out;
+.cover__banner-button {
+  transition: box-shadow 0.25s ease;
   background-color: var(--bg-light-color);
   text-decoration: none;
   color: var(--bg-dark-color);
