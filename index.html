@@ -17,140 +17,123 @@
 
 <body class="body">
 	<header class="header">
-		<nav class="header-nav">
-			<div class="header-nav__container">
-				<a href="#" class="header-nav__link-logo-container">
-					<img src="https://i.postimg.cc/Bv0NN80w/logo-cohete-2.jpg" alt="Logo de Landing Page Studio"
-						class="header-nav__link-logo">
-				</a>
-				<label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
-					<i class="bi bi-list"></i>
-				</label>
-				<input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox">
-				<ul class="header-nav__menu-link-list">
-					<li class="header-nav__menu-link-item header-nav__menu-link-item--item1">
-						<a href="#inicio" class="header-nav__menu-link header-nav__menu-link--item1">
-							INICIO
-						</a>
-					</li>
-					<li class="header-nav__menu-link-item header-nav__menu-link-item--item2">
-						<a href="#servicios" class="header-nav__menu-link header-nav__menu-link--item2">
-							SERVICIOS
-						</a>
-					</li>
-					<li class="header-nav__menu-link-item header-nav__menu-link-item--item3">
-						<a href="#proyectos" class="header-nav__menu-link header-nav__menu-link--item3">
-							PROYECTOS
-						</a>
-					</li>
-					<li class="header-nav__menu-link-item header-nav__menu-link-item--item4">
-						<a href="#equipo" class="header-nav__menu-link header-nav__menu-link--item4">
-							EQUIPO
-						</a>
-					</li>
-					<li class="header-nav__menu-link-item header-nav__menu-link-item--item5">
-						<a href="#cotizacion" class="header-nav__menu-link header-nav__menu-link--item5">
-							COTIZACIÓN
-						</a>
-					</li>
-					<li class="header-nav__menu-link-item header-nav__menu-link-item--item6">
-						<a href="#contacto" class="header-nav__menu-link header-nav__menu-link--active 
-							header-nav__menu-link--item6">
-							CONTACTO
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<div class="header-container">
+			<nav class="header-nav">
+					<article class="header-nav__logo-container">
+						<img src="https://i.postimg.cc/fTBMvbKv/icon.png" alt="Logo de PCManía" class="header-nav__logo">
+						<h1 class="header-nav__title">
+							PCMANÍA
+						</h1>
+					</article>
+					<input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox">
+					<label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+						<i class="bi bi-list"></i>
+					</label>
+					<label for="headerNavMenuIcon" class="header-nav__menu-icon-label-close">
+						<i class="bi bi-x-lg"></i>
+					</label>
+					<ul class="header-nav__menu-link-list">
+						<li class="header-nav__list-item">
+							<a href="" class="header-nav__link">Inicio</a>
+						</li>
+						<li class="header-nav__list-item">
+							<a href="" class="header-nav__link">Productos</a>
+						</li>
+						<li class="header-nav__list-item">
+							<a href="" class="header-nav__link">Contacto</a>
+						</li>
+					</ul>
+			</nav>
+		</div>
 	</header>
 	<main class="main">
-		<section class="proyectos">
-			<h2 class="proyectos__title">
-				Proyectos
+		<section class="productos">
+			<h2 class="productos__title">
+				productos
 			</h2>
-			<section class="proyectos" id="proyectos">
-				<div class="proyectos-container">
-					<ul class="proyectos__button-container">
-						<li class="proyectos__button current" data-target="all">Todos</li>
-						<li class="proyectos__button" data-target="react">React</li>
-						<li class="proyectos__button" data-target="angular">Angular</li>
-						<li class="proyectos__button" data-target="vue">Vue</li>
+			<section class="productos" id="productos">
+				<div class="productos-container">
+					<ul class="productos__button-container">
+						<li class="productos__button current" data-target="all">Todos</li>
+						<li class="productos__button" data-target="react">React</li>
+						<li class="productos__button" data-target="angular">Angular</li>
+						<li class="productos__button" data-target="vue">Vue</li>
 					</ul>
-					<div class="proyectos__gallery">
-						<article data-item="react" class="proyectos__gallery-item">
+					<div class="productos__gallery">
+						<article data-item="react" class="productos__gallery-item">
 							<img src="images/proyects/creatives.jpg" alt="We are creatives thumbnail"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">We are creatives</p>
-									<p class="proyectos__gallery-item-subtitle">React + Next.js </p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">We are creatives</p>
+									<p class="productos__gallery-item-subtitle">React + Next.js </p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 							</div>
 						</article>
 
-						<article data-item="react" class="proyectos__gallery-item">
+						<article data-item="react" class="productos__gallery-item">
 							<img src="images/proyects/gallery.jpg" alt="Algún nombre"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">Modern art gallery</p>
-									<p class="proyectos__gallery-item-subtitle">React + Django</p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">Modern art gallery</p>
+									<p class="productos__gallery-item-subtitle">React + Django</p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 							</div>
 						</article>
-						<article data-item="angular" class="proyectos__gallery-item">
+						<article data-item="angular" class="productos__gallery-item">
 							<img src="images/proyects/experiences.jpg"
 								alt="Immersive Experiencies that deliver thumbnail"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">Immersive experiencies that deliver</p>
-									<p class="proyectos__gallery-item-subtitle">Angular + Spring</p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">Immersive experiencies that deliver</p>
+									<p class="productos__gallery-item-subtitle">Angular + Spring</p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 							</div>
 						</article>
-						<article data-item="angular" class="proyectos__gallery-item">
+						<article data-item="angular" class="productos__gallery-item">
 							<img src="images/proyects/keyboards.jpg" alt="Typemaster Keyboard thumbnail"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">Typemaster Keyboard</p>
-									<p class="proyectos__gallery-item-subtitle">Angular + Laravel</p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">Typemaster Keyboard</p>
+									<p class="productos__gallery-item-subtitle">Angular + Laravel</p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 						</article>
-						<article data-item="vue" class="proyectos__gallery-item">
+						<article data-item="vue" class="productos__gallery-item">
 							<img src="images/proyects/meet.jpg" alt="Let's meet thumbnail"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">Let's meet</p>
-									<p class="proyectos__gallery-item-subtitle">Vue + Express.js</p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">Let's meet</p>
+									<p class="productos__gallery-item-subtitle">Vue + Express.js</p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 						</article>
-						<article data-item="vue" class="proyectos__gallery-item">
+						<article data-item="vue" class="productos__gallery-item">
 							<img src="images/proyects/sneakers.jpg" alt="Sneakers thumbnail"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">Sneakers</p>
-									<p class="proyectos__gallery-item-subtitle">Vue + Django</p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">Sneakers</p>
+									<p class="productos__gallery-item-subtitle">Vue + Django</p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 						</article>
-						<article data-item="vue" class="proyectos__gallery-item">
+						<article data-item="vue" class="productos__gallery-item">
 							<img src="images/proyects/space.jpg" alt="So, you want to travel to the space thumbnail"
-								class="proyectos__gallery-item-thumbnail">
-							<div class="proyectos__gallery-item-info">
-								<div class="proyectos__gallery-item-description">
-									<p class="proyectos__gallery-item-title">So, you want to travel to the space</p>
-									<p class="proyectos__gallery-item-subtitle">Vue + Laravel</p>
+								class="productos__gallery-item-thumbnail">
+							<div class="productos__gallery-item-info">
+								<div class="productos__gallery-item-description">
+									<p class="productos__gallery-item-title">So, you want to travel to the space</p>
+									<p class="productos__gallery-item-subtitle">Vue + Laravel</p>
 								</div>
-								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+								<a href="#" class="productos__gallery-item-button">Ver más</a>
 						</article>
 					</div>
 				</div>

@@ -1,10 +1,206 @@
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: var(--bg-dark-color);
+}
+.header-container {
+  max-width: var(--max-width);
+  position: relative;
+}
+.header-nav {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.header-nav__logo-container {
+  margin: 0;
+  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.header-nav__logo {
+  width: 3rem;
+}
+.header-nav__title {
+  font-weight: var(--font-weight-black);
+  font-size: 2rem;
+  margin: 0;
+  color: var(--text-light-color);
+}
+.header-nav__menu-link-list {
+  background-color: var(--bg-light-color);
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: right top;
+  transition: all 0.25s ease-in;
+  padding: 5rem 0rem 3rem 0rem;
+  border-bottom: 1px solid var(--bg-dark-color);
+}
+.header-nav__close-list-icon {
+  color: var(--text-dark-color);
+  font-size: 2rem;
+}
+.header-nav__list-item {
+  font-size: 1.5rem;
+}
+.header-nav__link {
+  color: var(--text-dark-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-nav__menu-icon-label {
+  font-size: 2rem;
+  color: var(--text-light-color);
+  cursor: pointer;
+}
+.header-nav__menu-icon-label-close {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  z-index: 100;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+.header-nav__menu-icon-checkbox {
+  display: none;
+}
+.header-nav__menu-icon-checkbox:checked ~ .header-nav__menu-link-list {
+  transform: none;
+  opacity: 1;
+}
+.header-nav__menu-icon-checkbox:checked ~ .header-nav__menu-icon-label-close {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: var(--bg-dark-color);
+  }
+  .header-container {
+    max-width: var(max-width);
+    position: relative;
+    margin: 0 auto;
+  }
+  .header-nav {
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  .header-nav__logo-container {
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .header-nav__logo {
+    width: 3rem;
+  }
+  .header-nav__title {
+    font-weight: var(--font-weight-black);
+    font-size: 2rem;
+    margin: 0;
+    color: var(--text-light-color);
+  }
+  .header-nav__menu-link-list {
+    background-color: inherit;
+    color: var(--text-light-color);
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    margin: 0;
+    width: auto;
+    opacity: 1;
+    transform: none;
+    transform-origin: right top;
+    transition: all 0.25s ease-in;
+    padding: 0;
+    border-bottom: none;
+  }
+  .header-nav__close-list-icon {
+    font-size: 2rem;
+  }
+  .header-nav__list-item {
+    font-size: 1.5rem;
+  }
+  .header-nav__link {
+    text-transform: capitalize;
+    color: var(--text-light-color);
+    position: relative;
+  }
+  .header-nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: -2.5px;
+    left: 10%;
+    width: 80%;
+    background-color: var(--primary-color);
+    height: 2px;
+    transform: scale(0);
+    transform-origin: center center;
+    transition: transform 0.25s ease-in-out;
+  }
+  .header-nav__link:hover::after {
+    transform: scale(1);
+  }
+  .header-nav__menu-icon-label {
+    display: none;
+  }
+  .header-nav__menu-icon-label-close {
+    display: none;
+  }
+}
 :root {
-  --bg-light-color: #fff;
-  --bg-dark-color: #333;
+  --primary-color: #F9A66C;
+  --secondary-color: #FFC04B;
+  --tertiary-color: F17A7E;
+  --bg-light-color: #F9FAF4;
+  --bg-dark-color: #4A6163;
+  --text-light-color: #F9FAF4;
+  --text-dark-color: #333;
   --font-family: "Alegreya Sans", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
+  --max-width: 1080px;
+}
+
+.body {
+  font-family: var(--font-family);
+  background-color: var(--bg-light-color);
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

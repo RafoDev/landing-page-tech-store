@@ -1,0 +1,160 @@
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: var(--bg-dark-color);
+    &-container {
+        max-width: var(--max-width);
+        position: relative;
+    }
+    &-nav {
+        padding: 1rem;
+        @include flex-d-w-j-a-g(row, nowrap, space-between, center, 0);
+        &__logo-container {
+            margin: 0;
+            width: auto;
+            @include flex-d-w-j-a-g(row, nowrap, center, center, 1rem);
+        }
+        &__logo {
+            width: 3rem;
+        }
+        &__title {
+            font-weight: var(--font-weight-black);
+            font-size: 2rem;
+            margin: 0;
+            color: var(--text-light-color);
+        }
+        &__menu-link-list {
+            background-color: var(--bg-light-color);
+            list-style: none;
+            @include flex-d-w-j-a-g(column, nowrap, center, center, 4rem);
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            margin: 0;
+            opacity: 0;
+            transform: scale(0);
+            transform-origin: right top;
+            transition: all 0.25s ease-in;
+            padding: 5rem 0rem 3rem 0rem;
+            border-bottom: 1px solid var(--bg-dark-color);
+        }
+        &__close-list-icon {
+            color: var(--text-dark-color);
+            font-size: 2rem;
+        }
+        &__list-item {
+            font-size: 1.5rem;
+          }
+          &__link {
+            color: var(--text-dark-color);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        &__menu-icon-label {
+            font-size: 2rem;
+            color: var(--text-light-color);
+            cursor: pointer;
+            &-close {
+                position: absolute;
+                top: 1.3rem;
+                right: 1rem;
+                z-index: 100;
+                font-size: 2rem;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+                cursor: pointer;
+            }
+        }
+        &__menu-icon-checkbox {
+            display: none;
+        }
+        &__menu-icon-checkbox:checked ~ &__menu-link-list {
+            transform: none;
+            opacity: 1;
+        }
+        &__menu-icon-checkbox:checked ~ &__menu-icon-label-close {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        background-color: var(--bg-dark-color);
+        &-container {
+            max-width: var(max-width);
+            position: relative;
+            margin:0 auto;
+        }
+        &-nav {
+            padding: 1rem;
+            @include flex-d-w-j-a-g(row, nowrap, space-between, center, 0);
+            &__logo-container {
+                margin: 0;
+                width: auto;
+                @include flex-d-w-j-a-g(row, nowrap, center, center, 1rem);
+            }
+            &__logo {
+                width: 3rem;
+            }
+            &__title {
+                font-weight: var(--font-weight-black);
+                font-size: 2rem;
+                margin: 0;
+                color: var(--text-light-color);
+            }
+            &__menu-link-list {
+                background-color: inherit;
+                color: var(--text-light-color);
+                list-style: none;
+                @include flex-d-w-j-a-g(row, nowrap, center, center, 4rem);
+                position: relative;
+                margin: 0;
+                width: auto;
+                opacity: 1;
+                transform: none;
+                transform-origin: right top;
+                transition: all 0.25s ease-in;
+                padding: 0;
+                border-bottom: none;
+            }
+            &__close-list-icon {
+                font-size: 2rem;
+            }
+            &__list-item {
+                font-size: 1.5rem;
+              }
+              &__link {
+                text-transform:capitalize;
+                color: var(--text-light-color);
+                position: relative;
+                &::after{
+                  content:"";
+                  position: absolute;
+                  bottom:-2.5px;
+                  left:10%;
+                  width: 80%;
+                  background-color: var(--primary-color);
+                  height: 2px;
+                  transform: scale(0);
+                  transform-origin: center center;
+                  transition: transform .25s ease-in-out;
+                }
+                &:hover::after{
+                  transform: scale(1);
+                }  
+            }
+            &__menu-icon-label {
+                display: none;
+                &-close {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin flex-d-w-j-a-g(
+    $-flex-direction: row,
+    $-flex-wrap: nowrap,
+    $-justify-content: center,
+    $-align-items: center,
+    $-gap: 1rem
+) {
+    display: flex;
+    flex-flow: $-flex-direction $-flex-wrap;
+    justify-content: $-justify-content;
+    align-items: $-align-items;
+    gap: $-gap;
+}
