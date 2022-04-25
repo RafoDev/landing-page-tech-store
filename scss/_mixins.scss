@@ -1,0 +1,26 @@
+@mixin flex-d-w-j-a-g(
+    $-flex-direction: row,
+    $-flex-wrap: nowrap,
+    $-justify-content: center,
+    $-align-items: center,
+    $-gap: 1rem
+) {
+    display: flex;
+    flex-flow: $-flex-direction $-flex-wrap;
+    justify-content: $-justify-content;
+    align-items: $-align-items;
+    gap: $-gap;
+}
+@mixin button{
+    background-color: var(--bg-light-color);
+    text-decoration: none;
+    color: var(--bg-dark-color);
+    padding:.5em 1em;
+    border: 1px solid var(--bg-dark-color);
+}
+@mixin button-hover{
+    @include button;
+    &:hover{
+        @content;
+    }
+}
