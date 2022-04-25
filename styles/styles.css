@@ -1,10 +1,87 @@
+.cover-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.cover__banner {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  padding: 1rem;
+  background-image: url(https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/16:9/w_1280,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cover__banner-info {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  background-color: var(--bg-light-color);
+  display: flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  width: 70%;
+  padding: 2em 1em;
+}
+.cover__banner-title {
+  margin: 0;
+  inline-size: 60vw;
+  overflow-wrap: break-word;
+}
+.cover__banner-button {
+  transition: box-shadow 0.25s ease;
+  background-color: var(--bg-light-color);
+  text-decoration: none;
+  color: var(--bg-dark-color);
+  padding: 0.5em 1em;
+  border: 1px solid var(--bg-dark-color);
+}
+.cover__banner-button:hover {
+  box-shadow: 2px 2px 0 2px var(--primary-color), -2px -2px 0 2px var(--tertiary-color);
+}
+.cover__info {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 0;
+}
+.cover__info-item {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  flex-basis: 270px;
+}
+.cover__info-logo {
+  font-size: 3rem;
+}
+.cover__info-description {
+  font-size: 0.9rem;
+  color: rgb(98, 98, 98);
+}
+
 :root {
-  --bg-light-color: #fff;
-  --bg-dark-color: #333;
+  --primary-color: #F9A66C;
+  --secondary-color: #FFC04B;
+  --tertiary-color: #F17A7E;
+  --bg-light-color: #F9FAF4;
+  --bg-dark-color: #4A6163;
+  --text-light-color: #F9FAF4;
+  --text-dark-color: #333;
   --font-family: "Alegreya Sans", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
+  --max-width: 1080px;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
