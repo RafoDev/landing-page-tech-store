@@ -40,6 +40,11 @@
             transition: all 0.25s ease-in;
             padding: 5rem 0rem 3rem 0rem;
             border-bottom: 1px solid var(--bg-dark-color);
+            &-show{
+                transform: none;
+                opacity: 1;
+            }
+
         }
         &__close-list-icon {
             color: var(--text-dark-color);
@@ -66,6 +71,9 @@
                 opacity: 0;
                 transition: opacity 0.5s ease-in-out;
                 cursor: pointer;
+                &-show{
+                    opacity: 1;
+                }
             }
         }
         &__menu-icon-checkbox {
