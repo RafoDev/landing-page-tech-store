@@ -171,6 +171,7 @@
   overflow: hidden;
   background-color: #fff;
   position: relative;
+  animation: active 0.25s ease-in;
 }
 .productos__gallery-item-thumbnail {
   position: absolute;
@@ -228,10 +229,10 @@
 @keyframes active {
   0% {
     opacity: 0;
-    /* transform: scale(.99); */
+    transform: translateY(-0.5rem);
   }
   100% {
-    /* transform: none; */
+    transform: none;
     opacity: 1;
   }
 }
