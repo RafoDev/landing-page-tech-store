@@ -184,9 +184,9 @@
 		</section>
 
 		<section class="contact">
+			<h2 class="contact__title">Contacto</h2>
 <div class="contact-container">
-	<h2 class="contact__title">Contacto</h2>
-	<form action="" class="contact__form">
+	<form action="" class="contact__form" id="contactForm">
 		<select name="" id="" class="contact__form-select">
 			<option value="" class="contact__form-option">La Victoria</option>
 			<option value="" class="contact__form-option">Cercado de Lima</option>
@@ -195,11 +195,12 @@
 			<option value="" class="contact__form-option">San Martin de Porres</option>
 			<option value="" class="contact__form-option">San Juan de Miraflores</option>
 		</select>
-		<input type="text" class="contact__form-input" placeholder="Nombres"
-		<textarea name="" class="contact__form-input" placeholder="Mensaje"></textarea>
-		<input type="text" class="contact__form-input" placeholder="Telefono">
-		<input type="text" class="contact__form-input" placeholder="CorreoElectronico">
-		<button class="contact__form-button">Registrar</button>
+		<input type="text" id="txtNom" class="contact__form-input" placeholder="Nombres">
+		<label for="txtNom" id="txtNom"></label>
+		<textarea name="" id="txtArea"class="contact__form-input" placeholder="Mensaje"></textarea>
+		<input type="text" id="txtCel" class="contact__form-input" placeholder="Telefono">
+		<input type="text" id="txtEmail"class="contact__form-input" placeholder="CorreoElectronico">
+		<button type="submit" class="contact__form-button">Registrar</button>
 	</form>
 </div>
 		</section>
@@ -242,6 +243,7 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="scripts/galleryFilter.js"></script>
+	<script  type="text/javascript" src="scripts/validacion.js"></script>
 </body>
 
 </html>
