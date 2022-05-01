@@ -527,6 +527,49 @@
     display: none;
   }
 }
+.contact {
+  width: var(--max-width);
+  text-align: center;
+  margin: auto;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+.contact__title {
+  margin: 0;
+  font-size: 2rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact__form-input {
+  background-color: inherit;
+  color: var(--inverse-text-color);
+  border: 0.25rem solid var(--text-light-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.contact__form-input::placeholder {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.contact__form-option {
+  text-align: center;
+}
+.contact__form-select {
+  border: 1px solid #ccc;
+  width: 20rem;
+  overflow: hidden;
+  background: #fff url("https://icons8.com/icon/VkCzgiqDqr7R/expand-arrow;") no-repeat 90% center;
+}
+
 :root {
   --primary-color: #F9A66C;
   --secondary-color: #FFC04B;
