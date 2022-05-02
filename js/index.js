@@ -1,9 +1,9 @@
 'use strict';
 
-import galleryFilter from "./galleryFilter.js";
+import darkMode from "./darkMode.js";
 
 const documentReady = () => {
-  galleryFilter();
+  darkMode();
 }
 
 document.addEventListener('DOMContentLoaded', documentReady);

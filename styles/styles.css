@@ -4,6 +4,9 @@
   background-color: var(--bg-dark-color);
   overflow: hidden;
 }
+body.body-dark .footer {
+  background-color: rgb(45, 44, 44);
+}
 .footer-container {
   padding-top: 2rem;
   padding: 1rem 2rem;
@@ -138,6 +141,9 @@
   font-size: 2rem;
   color: var(--text-dark-color);
 }
+body.body-dark .productos__title {
+  color: var(--text-light-color);
+}
 .productos__button-container {
   padding-left: 0;
   display: flex;
@@ -171,6 +177,9 @@
   overflow: hidden;
   background-color: #fff;
   position: relative;
+}
+body.body-dark .productos__gallery-item {
+  background-color: rgb(58, 58, 58);
 }
 .productos__gallery-item-thumbnail {
   position: absolute;
@@ -304,6 +313,9 @@
   width: 70%;
   padding: 2em 1em;
 }
+body.body-dark .cover__banner-info {
+  background-color: rgb(58, 58, 58);
+}
 .cover__banner-title {
   margin: 0;
   inline-size: 60vw;
@@ -341,16 +353,7 @@
   font-size: 0.9rem;
   color: rgb(98, 98, 98);
 }
-
-.body {
-  font-family: var(--font-family);
-  background-color: var(--bg-light-color);
-  color: black;
-  margin: 0;
-  transition: 0.3s ease all;
-}
-.body-dark {
-  background: black;
+body.body-dark .cover__info-description {
   color: white;
 }
 
@@ -499,26 +502,6 @@ body.body-dark .header-nav__link {
   opacity: 1;
 }
 
-body.body-dark .cover__info-description {
-  color: white;
-}
-
-body.body-dark .cover__banner-info {
-  background-color: rgb(58, 58, 58);
-}
-
-body.body-dark .productos__title {
-  color: var(--text-light-color);
-}
-
-body.body-dark .productos__gallery-item {
-  background-color: rgb(58, 58, 58);
-}
-
-body.body-dark .footer {
-  background-color: rgb(45, 44, 44);
-}
-
 @media (min-width: 992px) {
   .header-container {
     margin: 0 auto;
@@ -581,6 +564,18 @@ body.body-dark .footer {
   --font-weight-bold: 400 + 300;
   --font-weight-black: 900;
   --max-width: 1080px;
+}
+
+.body {
+  font-family: var(--font-family);
+  background-color: var(--bg-light-color);
+  color: #333;
+  margin: 0;
+  transition: 0.3s ease all;
+}
+.body-dark {
+  background: rgb(39, 39, 39);
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

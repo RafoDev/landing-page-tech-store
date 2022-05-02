@@ -1,11 +1,11 @@
-
 .footer {
     font-family: var(--font-family);
     box-sizing: border-box;
     background-color: var(--bg-dark-color);
     overflow: hidden;
-    // width: 100vw;
-
+    body.body-dark & {
+        background-color: rgb(45, 44, 44);
+    }
     &-container {
         padding-top: 2rem;
         padding: 1rem 2rem;
