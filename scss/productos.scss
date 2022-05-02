@@ -1,6 +1,7 @@
 $regular: 400;
 $bold: $regular + 300;
 $black: $regular + 500;
+
 .productos {
     width: 100%;
 
@@ -21,6 +22,9 @@ $black: $regular + 500;
         text-align: center;
         font-size: 2rem;
         color: var(--text-dark-color);
+        body.body-dark & {
+            color: var(--text-light-color);
+          }
     }
 
     &__button-container {
@@ -60,6 +64,9 @@ $black: $regular + 500;
             background-color: #fff;
             position: relative;
             animation: active .25s ease-in;
+            body.body-dark & {
+                background-color: rgb(58, 58, 58);
+              }
         }
 
         &-item-thumbnail {
