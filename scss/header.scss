@@ -17,6 +17,10 @@
   width: 100%;
   top: 0;
   background-color: var(--bg-dark-color);
+  transition: .8s ease all;
+  body.body-dark & {
+    background-color: rgb(45, 44, 44);
+  }
   &-container {
     max-width: var(--max-width);
     position: relative;
@@ -44,7 +48,6 @@
       border: none;
       position: relative;
       cursor: pointer;
-      // display: flex;
       @include flex-d-w-j-a-g(row, nowrap, center, center, 0);
       outline: none;
       &::after {
@@ -78,23 +81,6 @@
         background: none;
         color: #fff;
       }
-      // background-color: inherite;
-      // height: 3rem;
-      // border-radius: 1000px;
-      // border: none;
-      // position: relative;
-      // cursor: pointer;
-      // display: flex;
-      // outline: none;
-      // &-label {
-      //   // width: 300px;
-      //   // height: 30px;
-      //   // line-height: 30px;
-      //   font-size: 5rem;
-      //   display: block;
-      //   background: none;
-      //   color: white;
-      // }
     }
     &__menu-link-list {
       background-color: var(--bg-light-color);
@@ -111,11 +97,10 @@
       transition: all 0.25s ease-in;
       padding: 5rem 0rem 3rem 0rem;
       border-bottom: 1px solid var(--bg-dark-color);
+      body.body-dark & {
+        background-color: rgb(45, 44, 44);
+      }
     }
-    // &__close-list-icon {
-    //   color: var(--text-dark-color);
-    //   font-size: 2rem;
-    // }
     &__list-item {
       font-size: 1.5rem;
     }
@@ -123,6 +108,9 @@
       color: var(--text-dark-color);
       text-decoration: none;
       text-transform: uppercase;
+      body.body-dark & {
+        color: var(--text-light-color);
+      }
     }
     &__menu-icon-label {
       font-size: 2rem;
@@ -152,52 +140,54 @@
   }
 }
 
+.cover__info-description {
+  body.body-dark & {
+    color: white;
+  }
+}
+
+.cover__banner-info {
+  body.body-dark & {
+    background-color: rgb(58, 58, 58);
+  }
+}
+
+.productos__title {
+  body.body-dark & {
+    color: var(--text-light-color);
+  }
+}
+
+.productos__gallery-item {
+  body.body-dark & {
+    background-color: rgb(58, 58, 58);
+  }
+}
+
+.footer {
+  body.body-dark & {
+    background-color: rgb(45, 44, 44);
+  }
+}
+
+
 @media (min-width: 992px) {
   .header {
-    // position: sticky;
-    // width: 100%;
-    // top: 0;
-    // background-color: var(--bg-dark-color);
     &-container {
-      // max-width: var(--max-width);
-      // position: relative;
       margin:0 auto;
     }
     &-nav {
-      // padding: 1rem;
-      // @include flex-d-w-j-a-g(row, nowrap, space-between, center, 0);
-      // &__logo-container {
-      //   margin: 0;
-      //   width: auto;
-      //   @include flex-d-w-j-a-g(row, nowrap, center, center, 1rem);
-      // }
-      // &__logo {
-      //   width: 3rem;
-      // }
-      // &__title {
-      //   font-weight: var(--font-weight-black);
-      //   font-size: 2rem;
-      //   margin: 0;
-      //   color: var(--text-light-color);
-      // }
       &__menu-link-list {
         background-color: inherit;
         color: var(--text-light-color);
-        // list-style: none;
         @include flex-d-w-j-a-g(row, nowrap, center, center, 4rem);
         position: relative;
-        // margin: 0;
         width: auto;
         opacity: 1;
         transform: none;
-        // transform-origin: right top;
-        // transition: all 0.25s ease-in;
         padding: 0;
         border-bottom: none;
       }
-      // &__close-list-icon {
-      //   font-size: 2rem;
-      // }
       &__list-item {
         font-size: 1.5rem;
       }

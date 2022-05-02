@@ -1,28 +1,25 @@
 'use strict';
 
 // const documentReady = () => {
-  const btnSwitch = document.querySelector('#header-nav__menu-switch');
-
-  console.log(btnSwitch);
+  const btnSwitch = document.querySelector(".header-nav__menu-switch");
+  const infoDescription = document.querySelector(".cover__info-description");
 
   btnSwitch.addEventListener('click', () => {
+    console.log('Modo oscuro activo');
     document.body.classList.toggle('body-dark');
-    // btnSwitch.classList.toggle('active');
+    btnSwitch.classList.toggle('active');
+  
+    if(document.body.classList.contains('body-dark')){
+      localStorage.setItem('dark-mode', 'true');
+    } else {
+      localStorage.setItem('dark-mode', 'false');
+    }
   });
-  //   // Guardamos el modo en localstorage.
-  //   if(document.body.classList.contains('dark')){
-  //     localStorage.setItem('dark-mode', 'true');
-  //   } else {
-  //     localStorage.setItem('dark-mode', 'false');
-  //   }
-  // });
 
-  // // Obtenemos el modo actual.
-  // if(localStorage.getItem('dark-mode') === 'true'){
-  //   document.body.classList.add('dark');
-  //   btnSwitch.classList.add('active');
-  // } else {
-  //   document.body.classList.remove('dark');
-  //   btnSwitch.classList.remove('active');
-  // }
-// }
+  if(localStorage.getItem('dark-mode') === 'true'){
+    document.body.classList.add('body-dark');
+    btnSwitch.classList.add('active');
+  } else {
+    document.body.classList.remove('body-dark');
+    btnSwitch.classList.remove('active');
+  }
