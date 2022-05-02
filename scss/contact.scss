@@ -1,0 +1,103 @@
+.contact {
+  max-width: var(--max-width);
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  font-family: var(--font-family);
+  &-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  &__title {
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+  }
+  
+  &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      flex-basis: 600px;
+
+  }
+  &__form-response{
+    margin: 0;
+    color: #ff0000;
+  }
+
+  &__form-input { 
+      width: 90%;
+      color: var(--inverse-text-color);
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      outline: none;
+      background-color: #fff;
+      border-bottom: 1px solid rgb(179, 179, 179);
+      transition: background-color .25s ease, box-shadow .25s ease;
+      // transition: var(--all-transitions);
+    &::placeholder{
+      font-family: inherit;
+      font-size: 1rem;
+      text-align: center;
+      color:rgb(116, 116, 116);
+      transition: color .25s ease;
+    }  
+    &:focus{
+      background-color: #fff;
+      box-shadow: 2px 2px 5px rgba(79, 79, 79, 0.249);
+      border-bottom: 1px solid rgba(235, 235, 235, 0);
+    }
+    &:focus::placeholder{
+      color:rgb(173, 173, 173);
+    }
+    &--valid{
+      border: 1px solid #24f724;
+    }
+    &--valid::after{
+      content:"✅";
+      width: 2rem;
+    }
+
+
+    &--invalid{
+
+      border: 1px solid #ff0000;
+    }
+    &--invalid::after{
+      content:"❌";
+      width: 2rem;
+    }
+  }
+
+
+  &__form-option {
+    text-align: center;
+  }
+  
+  &__form-select {
+    padding: 0.5em 1em;
+    margin: 0 auto;
+      border: 1px solid #ccc;
+      width: 20rem;
+      overflow: hidden;
+      background: #fff
+      url("https://icons8.com/icon/VkCzgiqDqr7R/expand-arrow;") no-repeat
+      90% center;
+      border:0;
+      border-radius: .5em;
+  }
+  &__form-button {
+      margin-top: 1rem;
+      transition: box-shadow 0.25s ease-in-out;
+      @include button-hover {
+          box-shadow: 2px 2px 0 2px var(--secondary-color),
+              -2px -2px 0 2px var(--primary-color);
+      }
+      font-size: 1rem;
+  }
+}
+
