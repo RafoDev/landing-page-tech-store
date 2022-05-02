@@ -59,6 +59,7 @@ $black: $regular + 500;
             overflow: hidden;
             background-color: #fff;
             position: relative;
+            animation: active .25s ease-in;
         }
 
         &-item-thumbnail {
@@ -122,11 +123,11 @@ $black: $regular + 500;
 @keyframes active {
     0% {
         opacity: 0;
-        /* transform: scale(.99); */
+        transform: translateY(-.5rem);
     }
 
     100% {
-        /* transform: none; */
+        transform: none;
         opacity: 1;
     }
 }
