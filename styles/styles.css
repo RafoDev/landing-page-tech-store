@@ -400,6 +400,10 @@
   padding: 5rem 0rem 3rem 0rem;
   border-bottom: 1px solid var(--bg-dark-color);
 }
+.header-nav__menu-link-list-show {
+  transform: none;
+  opacity: 1;
+}
 .header-nav__close-list-icon {
   color: var(--text-dark-color);
   font-size: 2rem;
@@ -426,6 +430,9 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   cursor: pointer;
+}
+.header-nav__menu-icon-label-close-show {
+  opacity: 1;
 }
 .header-nav__menu-icon-checkbox {
   display: none;
