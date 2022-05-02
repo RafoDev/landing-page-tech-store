@@ -195,11 +195,14 @@
 			<option value="" class="contact__form-option">San Martin de Porres</option>
 			<option value="" class="contact__form-option">San Juan de Miraflores</option>
 		</select>
-		<input type="text" id="txtNom" class="contact__form-input" placeholder="Nombres">
-		<label for="txtNom" id="txtNom"></label>
-		<textarea name="" id="txtArea"class="contact__form-input" placeholder="Mensaje"></textarea>
-		<input type="text" id="txtCel" class="contact__form-input" placeholder="Telefono">
-		<input type="text" id="txtEmail"class="contact__form-input" placeholder="CorreoElectronico">
+		<input type="text" id="txtNom" name="txtNom" class="contact__form-input" placeholder="Nombres">
+		<p id="nombre" class="contact__form-response"></p>
+		<textarea name="" id="txtArea" name="txtArea"class="contact__form-input" placeholder="Mensaje"></textarea>
+		<p id="mensaje" class="contact__form-response"></p>
+		<input type="text" id="txtCel" name="txtCel" class="contact__form-input" placeholder="Telefono">
+		<p id="celular" class="contact__form-response"></p>
+		<input type="text" id="txtEmail" name="txtEmail" class="contact__form-input" placeholder="CorreoElectronico">
+		<p id="email" class="contact__form-response"></p>
 		<button type="submit" class="contact__form-button">Registrar</button>
 	</form>
 </div>

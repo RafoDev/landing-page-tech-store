@@ -551,6 +551,10 @@
   gap: 1rem;
   flex-basis: 600px;
 }
+.contact__form-response {
+  margin: 0;
+  color: #ff0000;
+}
 .contact__form-input {
   width: 90%;
   color: var(--inverse-text-color);
